@@ -1,0 +1,122 @@
+/*-----------------------------------
+BASE
+-------------------------------------*/
+
+body {
+	background: #f4f5f7;
+	font-size: 15px;
+}
+
+a {
+	color: #888;
+}
+
+h2 {
+	font-size: 1.7333em;
+	color: #676769;
+}
+
+h3 {
+	font-size: 1.333em;
+	color: #333;
+}
+
+/*-----------------------------------
+Header
+-------------------------------------*/
+
+.header-top {
+	background: rgb(201,76,70);
+	padding: 5px 0;
+}
+
+.logo {
+	margin: 0;
+}
+
+.logo a {
+	background: url("../img/logo.png") no-repeat 0 0;
+	width: 184px;
+	height: 60px;
+	display: inline-block;
+	font-size: 0;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+nav {
+	line-height: 70px;
+	text-align: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav a {
+	color: #fff;
+}
+
+nav a:hover {
+	color: #fff;
+}
+
+nav li {
+	list-style-type: none;
+	display: inline-block;
+	margin-left: .5em;
+}
+
+/*-----------------------------------
+MENU / Media Query
+-------------------------------------*/
+
+.menu-bar {
+	display: none;
+}
+
+@media screen and (max-width: 768px) {
+	nav.main-menu {
+		display: none;
+	}
+	.menu-bar {
+		display: block;
+		font-size: 1.5em;
+		color: #fff;
+		text-align: center;
+	}
+}
+
+/*-----------------------------------
+RWD MENU for jQuery
+-------------------------------------*/
+
+.header-top {
+    margin-bottom:2000px;
+}
+
+.rwd-menu {
+    position:fixed;
+    background: #fff;
+    width: 240px;
+    height: 100%;
+    top: 0;
+    right: -240px;
+    transition: all .3s ease;
+}
+
+.rwd-menu li{
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.rwd-menu a {
+    color: #333;
+}
+
+.rwd-menu-right {
+    right: 0px;
+}
